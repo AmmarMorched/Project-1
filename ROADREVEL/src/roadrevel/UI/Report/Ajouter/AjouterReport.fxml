@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="rootPane" prefHeight="891.0" prefWidth="641.0" stylesheets="@../../../resources/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roadrevel.UI.Report.Ajouter.AjouterReportController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="mainContainer" prefHeight="904.0" prefWidth="641.0" style="-fx-background-color: #FFF4E4;">
+         <children>
+            <VBox layoutX="121.0" layoutY="36.0" prefHeight="707.0" prefWidth="641.0" AnchorPane.bottomAnchor="230.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="92.0" prefWidth="206.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Add Report" textFill="#282825">
+                           <font>
+                              <Font name="Arial Bold Italic" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="641.0">
+                     <children>
+                        <JFXTextField fx:id="Subject" labelFloat="true" prefHeight="55.0" prefWidth="481.0" promptText="Subject" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="110.0" prefWidth="641.0">
+                     <children>
+                        <JFXTextField fx:id="Involvment" labelFloat="true" prefHeight="55.0" prefWidth="477.0" promptText="Involvment" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="131.0" prefWidth="317.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="175.0" text="Type">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="repType" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="110.0" prefWidth="641.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="175.0" text="Date">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="incidentDate" onAction="#DatePicker" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="641.0">
+                     <children>
+                        <JFXTextField fx:id="Location" labelFloat="true" prefHeight="71.0" prefWidth="477.0" promptText="Location" />
+                     </children></HBox>
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="641.0" />
+                  <HBox alignment="CENTER" prefHeight="70.0" prefWidth="641.0">
+                     <children>
+                        <JFXTextArea fx:id="Report_Descrp" labelFloat="true" prefHeight="85.0" prefWidth="492.0" promptText="Report Description">
+                           <font>
+                              <Font name="Arial Bold" size="20.0" />
+                           </font>
+                        </JFXTextArea>
+                     </children></HBox>
+                  <HBox prefHeight="76.0" prefWidth="641.0">
+                     <children>
+                        <JFXButton onAction="#LoadSignIn" prefHeight="71.0" prefWidth="314.0" text="ADD">
+                           <font>
+                              <Font name="Arial Bold Italic" size="27.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#LoadCancel" prefHeight="65.0" prefWidth="340.0" text="Cancel">
+                           <font>
+                              <Font name="Arial Bold Italic" size="27.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
